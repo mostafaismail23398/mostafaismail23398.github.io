@@ -119,7 +119,7 @@ async function loadContent() {
   const contactLinks = document.getElementById('contact-links');
   contactLinks.innerHTML = `
     <a href="mailto:${data.contact.email}">Email</a>
-    <a href="tel:${data.contact.phone}">${data.contact.phone}</a>
+  
     <a href="${data.contact.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
     <a href="${data.contact.github}" target="_blank" rel="noopener">GitHub</a>
   `;

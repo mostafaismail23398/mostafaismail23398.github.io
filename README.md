@@ -71,6 +71,44 @@ python3 -m http.server 8000
 Open `http://localhost:8000` (opening `index.html` directly won't work,
 since `fetch()` needs a real server, not a `file://` URL).
 
+## Running the dashboard locally (no Netlify needed)
+
+Decap CMS has a local mode that skips Netlify Identity/Git Gateway entirely
+and writes straight to the files on your disk. Useful for testing before you
+deploy, or if you just want to edit content offline.
+
+Requirements: [Node.js](https://nodejs.org) installed, and this folder
+initialized as a git repo (`git init && git add . && git commit -m "init"` —
+the local backend needs git present, even if you never push anywhere).
+
+**Terminal 1 — start the local CMS proxy:**
+```bash
+cd mostafa-portfolio
+npx decap-server
+```
+Leave this running. It listens on port 8081 by default.
+
+**Terminal 2 — serve the site:**
+```bash
+cd mostafa-portfolio
+python3 -m http.server 8000
+```
+
+**Then open:** `http://localhost:8000/admin/`
+
+Because `local_backend: true` is set in `admin/config.yml`, the dashboard
+detects the proxy server and skips login entirely — you're straight into the
+editor. Any edit you publish is written directly to `content/data.json` (and
+any uploaded photo lands in `images/uploads/`) on your local disk, no
+internet or Netlify account required.
+
+When you're happy with the changes, commit and push them yourself:
+```bash
+git add .
+git commit -m "Update portfolio content"
+git push
+```
+
 ## Notes
 
 - Project images are optional — cards without a photo just show the
