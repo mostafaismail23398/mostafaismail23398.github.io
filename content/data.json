@@ -1,63 +1,133 @@
 {
   "hero": {
-    "name": "Mostafa",
-    "title": "DevOps Engineer",
-    "tagline": "I build reliable, automated infrastructure — containers, CI/CD pipelines, and monitoring that catches problems before your users do.",
-    "cta_label": "View my work",
-    "cta_link": "#projects",
-    "avatar_initials": "M"
+    "kicker": "AVAILABLE FOR FREELANCE & FULL-TIME · CAIRO, EGYPT",
+    "headline_line1": "Six years keeping",
+    "headline_highlight": "infrastructure online.",
+    "tagline": "Senior System Administrator & DevOps Engineer — 6+ years across IT infrastructure, virtualization, and network security, with 2 years hands-on building CI/CD pipelines, cloud automation, and monitoring on AWS, Azure, Docker, and Kubernetes.",
+    "cta_primary_label": "See my work",
+    "cta_primary_link": "#projects",
+    "cta_secondary_label": "Get in touch",
+    "cta_secondary_link": "#contact"
   },
+  "stats": [
+    { "value": 6, "suffix": "+", "label": "YEARS IT EXPERIENCE" },
+    { "value": 80, "suffix": "%", "label": "FASTER DEPLOYMENTS" },
+    { "value": 500, "suffix": "+", "label": "USERS MANAGED (AD)" },
+    { "value": 41, "suffix": "%", "label": "SMALLER DOCKER IMAGES" }
+  ],
   "about": {
-    "heading": "About me",
-    "body": "I'm a DevOps Engineer with hands-on experience in containerized infrastructure, CI/CD automation, and monitoring. I focus on turning manual, fragile deployment processes into reliable, observable, automated systems. I'm currently working full-time as a DevOps Engineer while building out my freelance practice on Upwork."
+    "heading": "From network cabling to Kubernetes clusters",
+    "body": "I started in IT infrastructure — structured cabling, Windows Server, Active Directory, VMware clusters — and grew into modern DevOps practice: CI/CD pipelines, Infrastructure as Code, and observability. That background means I don't just automate deployments, I understand the network, security, and systems layers underneath them. I currently work as a Senior System Administrator / Cloud Engineer while taking on DevOps and cloud-automation projects on Upwork."
   },
-  "skills": [
-    "Docker", "Docker Compose", "Ansible", "AWX", "GitLab CI/CD", "Jenkins",
-    "Prometheus", "Grafana", "CheckMK", "Nginx", "MySQL", "Linux",
-    "Bash Scripting", "Git", "AWS"
+  "experience": [
+    {
+      "role": "Senior System Administrator / Cloud Engineer",
+      "company": "Adeer International · Cairo, Egypt",
+      "period": "07/2024 – Present",
+      "bullets": [
+        "Designed end-to-end CI/CD pipelines with GitHub Actions, cutting deployment time by 80% and eliminating manual release errors",
+        "Containerized multi-service apps with Docker/Compose, deployed to Kubernetes (Minikube/k3s) with rolling updates",
+        "Provisioned AWS infrastructure (EC2, S3, VPC, IAM) with Terraform, cutting environment setup from days to under 30 minutes",
+        "Automated server configuration with Ansible — user setup, UFW firewall rules, package management",
+        "Built a Prometheus + Grafana observability stack with custom dashboards and CPU/memory/uptime alerting",
+        "Administered Active Directory (500+ users), VMware ESXi clusters, and SQL Server across a multi-site environment"
+      ]
+    },
+    {
+      "role": "Senior Technical Support",
+      "company": "Tradeline · Cairo, Egypt",
+      "period": "09/2021 – 07/2024",
+      "bullets": [
+        "Automated routine sysadmin tasks with PowerShell/Bash, saving ~15 hours/week",
+        "Maintained VMware ESXi/vSphere and Hyper-V clusters, improving server utilization by 30%",
+        "Implemented firewall rules and VPN configs with zero security breaches during tenure",
+        "Provided Tier 2/3 support for ERP and attendance systems, maintaining a 95% satisfaction rate"
+      ]
+    },
+    {
+      "role": "IT Infrastructure Support Specialist",
+      "company": "BITco — Al-Azhar University Systems · Cairo, Egypt",
+      "period": "08/2016 – 08/2021",
+      "bullets": [
+        "Designed and deployed a full campus network — structured cabling, switch configuration, server setup",
+        "Configured Windows Server with AD and group policies across 200+ connected devices",
+        "Administered local network applications and maintained uptime for lab and admin systems"
+      ]
+    }
+  ],
+  "skill_categories": [
+    { "name": "Cloud Platforms", "skills": ["AWS", "Microsoft Azure", "GCP", "Cloud Migration", "IAM"] },
+    { "name": "Infrastructure as Code & Containers", "skills": ["Terraform", "Ansible", "Docker", "Kubernetes"] },
+    { "name": "CI/CD & Monitoring", "skills": ["GitHub Actions", "Jenkins", "GitLab CI/CD", "Prometheus", "Grafana"] },
+    { "name": "Systems, Security & Networking", "skills": ["Linux", "Windows Server", "Active Directory", "VMware ESXi/vSphere", "Hyper-V", "FortiGate", "Cisco IOS", "VPN"] },
+    { "name": "Scripting", "skills": ["Bash", "PowerShell", "Python"] }
   ],
   "projects": [
     {
-      "title": "Home Lab Infrastructure Stack",
-      "description": "A full Docker Compose stack — Nginx reverse proxy, MySQL, Node.js backend, static frontend — with multi-network isolation, healthchecks, resource limits, log rotation, and a complete Prometheus + Grafana monitoring layer.",
-      "tags": ["Docker Compose", "Prometheus", "Grafana", "Nginx"],
-      "link": "https://github.com/yourusername/home-lab-stack",
-      "status": "Live"
+      "title": "AWS Cloud Security & Compliance Automation (SOC 2 / ISO 27001)",
+      "description": "Automated AWS security and compliance checks against SOC 2 and ISO 27001 control benchmarks, with pass/fail reporting across accounts.",
+      "source": "upwork",
+      "image": ""
     },
     {
-      "title": "GitLab CI/CD Pipeline Lab",
-      "description": "End-to-end CI/CD pipeline for a multi-service app: Angular 19 frontend, Spring Boot microservices, Kafka (KRaft mode), and MySQL — covering builds, tests, and containerized deployment.",
-      "tags": ["GitLab CI", "Kafka", "Spring Boot", "Angular"],
-      "link": "https://github.com/yourusername/gitlab-cicd-lab",
-      "status": "In progress"
+      "title": "Python + Playwright Docker Image Optimization — 41% Size Reduction",
+      "description": "Rebuilt a Docker image running Python/Playwright test automation, trimming layers and dependencies to cut image size by 41% while keeping it fully functional.",
+      "source": "upwork",
+      "image": ""
     },
     {
-      "title": "Service Booking Platform",
-      "description": "A full-stack service booking platform (Laravel, MySQL, Tailwind) where clients book services from providers, with authentication, booking workflows, and a visitor-analytics dashboard.",
-      "tags": ["Laravel", "MySQL", "Tailwind"],
-      "link": "https://github.com/yourusername/booking-platform",
-      "status": "Live"
+      "title": "Automated Microservice CI/CD Pipeline (Jenkins & Docker)",
+      "description": "Built a Jenkins pipeline that builds, tests, and containerizes a microservice automatically on every commit, removing manual deployment steps.",
+      "source": "upwork",
+      "image": ""
+    },
+    {
+      "title": "AWS EKS Migration Blueprint — Container Hardening & Dynamic Autoscaling",
+      "description": "Designed a migration blueprint to AWS EKS with hardened container images and dynamic autoscaling policies for variable production load.",
+      "source": "upwork",
+      "image": ""
+    },
+    {
+      "title": "CI/CD Pipeline Implementation",
+      "description": "End-to-end pipelines with GitHub Actions and GitLab CI — automated testing, Docker image builds, and environment promotion.",
+      "source": "work",
+      "image": ""
+    },
+    {
+      "title": "Infrastructure Automation",
+      "description": "Terraform modules and Ansible playbooks for repeatable, version-controlled provisioning across dev, staging, and production.",
+      "source": "work",
+      "image": ""
+    },
+    {
+      "title": "ERP Cloud Migration",
+      "description": "Led migration of an on-premise ERP system to Azure — phased planning, integration reconfiguration, and cloud-native backup.",
+      "source": "work",
+      "image": ""
+    },
+    {
+      "title": "Security Hardening Programme",
+      "description": "Full security audit with FortiGate firewall policies and Cisco VPN hardening — 40% reduction in security incidents.",
+      "source": "work",
+      "image": ""
     }
   ],
-  "experience": [
-    {
-      "role": "DevOps Engineer",
-      "company": "Technical Solutions & Deployment Company",
-      "period": "Present",
-      "description": "Docker Compose, monitoring (Prometheus/Grafana, CheckMK), GitLab CI/CD, Ansible/AWX, and Linux administration."
-    },
-    {
-      "role": "Freelance DevOps Engineer",
-      "company": "Upwork",
-      "period": "Ongoing",
-      "description": "Independent projects covering infrastructure setup, CI/CD pipelines, and monitoring stacks for clients."
-    }
+  "education": {
+    "degree": "Bachelor's Degree — Information Technology",
+    "school": "New Cairo Academy · Cairo, Egypt",
+    "note": "Specialization: Systems, Networking, and LAN/WAN Management"
+  },
+  "languages": [
+    { "name": "Arabic", "level": "Fluent" },
+    { "name": "English", "level": "Proficient" },
+    { "name": "German", "level": "Basic" }
   ],
   "contact": {
-    "heading": "Let's work together",
-    "body": "Open to freelance projects and full-time opportunities in DevOps, infrastructure, and automation.",
-    "email": "you@example.com",
-    "github": "https://github.com/yourusername",
-    "upwork": "https://www.upwork.com/freelancers/~yourprofile"
+    "heading": "Let's build something reliable",
+    "body": "Open to freelance DevOps/cloud projects and full-time opportunities. Usually replies within a few hours.",
+    "email": "mostafa.2345@icloud.com",
+    "phone": "+201123541003",
+    "linkedin": "https://linkedin.com/in/mostafa-ismail-067415188",
+    "github": "https://github.com/mostafaismail23398"
   }
 }

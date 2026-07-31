@@ -17,12 +17,22 @@ collections:
             name: "hero"
             widget: "object"
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Kicker text", name: "kicker", widget: "string" }
+              - { label: "Headline line 1", name: "headline_line1", widget: "string" }
+              - { label: "Headline highlight (2nd line)", name: "headline_highlight", widget: "string" }
               - { label: "Tagline", name: "tagline", widget: "text" }
-              - { label: "Button label", name: "cta_label", widget: "string" }
-              - { label: "Button link", name: "cta_link", widget: "string" }
-              - { label: "Avatar initials", name: "avatar_initials", widget: "string" }
+              - { label: "Primary button label", name: "cta_primary_label", widget: "string" }
+              - { label: "Primary button link", name: "cta_primary_link", widget: "string" }
+              - { label: "Secondary button label", name: "cta_secondary_label", widget: "string" }
+              - { label: "Secondary button link", name: "cta_secondary_link", widget: "string" }
+
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Value (number)", name: "value", widget: "number" }
+              - { label: "Suffix", name: "suffix", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string" }
 
           - label: "About"
             name: "about"
@@ -31,27 +41,6 @@ collections:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Body", name: "body", widget: "text" }
 
-          - label: "Skills"
-            name: "skills"
-            widget: "list"
-            field: { label: "Skill", name: "skill", widget: "string" }
-
-          - label: "Projects"
-            name: "projects"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - label: "Tags"
-                name: "tags"
-                widget: "list"
-                field: { label: "Tag", name: "tag", widget: "string" }
-              - { label: "Link", name: "link", widget: "string", required: false }
-              - label: "Status"
-                name: "status"
-                widget: "select"
-                options: ["Live", "In progress"]
-
           - label: "Experience"
             name: "experience"
             widget: "list"
@@ -59,7 +48,47 @@ collections:
               - { label: "Role", name: "role", widget: "string" }
               - { label: "Company", name: "company", widget: "string" }
               - { label: "Period", name: "period", widget: "string" }
+              - label: "Bullets"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Bullet", name: "bullet", widget: "string" }
+
+          - label: "Skill categories"
+            name: "skill_categories"
+            widget: "list"
+            fields:
+              - { label: "Category name", name: "name", widget: "string" }
+              - label: "Skills"
+                name: "skills"
+                widget: "list"
+                field: { label: "Skill", name: "skill", widget: "string" }
+
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
+              - label: "Source"
+                name: "source"
+                widget: "select"
+                options: ["upwork", "work"]
+              - { label: "Photo", name: "image", widget: "image", required: false, hint: "Upload a screenshot or photo for this project (optional)" }
+
+          - label: "Education"
+            name: "education"
+            widget: "object"
+            fields:
+              - { label: "Degree", name: "degree", widget: "string" }
+              - { label: "School", name: "school", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
+
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - { label: "Language", name: "name", widget: "string" }
+              - { label: "Level", name: "level", widget: "string" }
 
           - label: "Contact"
             name: "contact"
@@ -68,5 +97,6 @@ collections:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Body", name: "body", widget: "text" }
               - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
               - { label: "GitHub URL", name: "github", widget: "string" }
-              - { label: "Upwork URL", name: "upwork", widget: "string" }
